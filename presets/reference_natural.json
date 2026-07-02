@@ -1,0 +1,150 @@
+{
+  "format": "omegafm-preset",
+  "version": 1,
+  "name": "NATURAL",
+  "signature": "NATURAL",
+  "density": "MEDIUM",
+  "created": "2026-07-02T05:19:02",
+  "params": {
+    "bypass_rotator": false,
+    "bypass_agc": false,
+    "bypass_eq": false,
+    "bypass_bass": false,
+    "bypass_leveler": false,
+    "bypass_comp": false,
+    "bypass_hf_lim": false,
+    "bypass_wb_lim": false,
+    "bypass_clipper": false,
+    "bypass_comp_clip": false,
+    "agc_target_db": -17.0,
+    "agc_range_db": 12.0,
+    "agc_attack_db_s": 2.5,
+    "agc_release_db_s": 1.2,
+    "agc_gate_db": -45.0,
+    "agc_integration_ms": 400.0,
+    "agc_window_db": 1.0,
+    "eq_freqs": [
+      100.0,
+      400.0,
+      2000.0,
+      8000.0
+    ],
+    "eq_gains": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "eq_qs": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "bass_shelf_db": 1.0,
+    "bass_harmonics": 0.3,
+    "lev_targets_db": [
+      -24.0,
+      -22.5,
+      -28.0,
+      -27.0
+    ],
+    "lev_range_db": 7.0,
+    "lev_rate_db_s": 1.5,
+    "lev_gate_db": -50.0,
+    "lev_integration_ms": 300.0,
+    "lev_window_db": 2.0,
+    "lev_couple_db": 2.0,
+    "comp_thresholds_db": [
+      -18.5,
+      -19.0,
+      -19.0,
+      -16.0
+    ],
+    "comp_ratios": [
+      2.5,
+      3.0,
+      3.0,
+      3.5
+    ],
+    "comp_attack_ms": [
+      18.0,
+      10.0,
+      7.0,
+      4.0
+    ],
+    "comp_release_ms": [
+      280.0,
+      200.0,
+      150.0,
+      110.0
+    ],
+    "comp_makeup_db": [
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ],
+    "comp_knee_db": 6.0,
+    "comp_platform_ms": 700.0,
+    "band_mix_db": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_drive_db": 0.0,
+    "hf_lim_threshold_db": -1.4,
+    "hf_lim_release_ms": 80.0,
+    "hf_split_hz": 4500.0,
+    "wb_lim_ceiling_db": -0.5,
+    "wb_lim_release_db_s": 90.0,
+    "wb_platform_ms": 250.0,
+    "clip_drive_db": 5.5,
+    "clip_knee": 0.25,
+    "composite_clip_mode": "filtered",
+    "composite_drive_db": 0.8
+  },
+  "plugins": {
+    "de_clipper": {
+      "enabled": false,
+      "params": {
+        "declip": 5.0,
+        "lossy": 3.0
+      }
+    },
+    "de_esser": {
+      "enabled": false,
+      "params": {
+        "freq": 6000.0,
+        "thresh_db": -4.0,
+        "range_db": 6.0,
+        "release_ms": 60.0
+      }
+    },
+    "power_bass": {
+      "enabled": false,
+      "params": {
+        "drive_db": 3.5,
+        "freq": 120.0,
+        "punch": 0.25,
+        "trim_db": 0.0
+      }
+    },
+    "sonic_maximizer": {
+      "enabled": false,
+      "params": {
+        "proc": 3.0,
+        "contour": 2.0,
+        "out_db": 0.0
+      }
+    },
+    "stereo_widener": {
+      "enabled": false,
+      "params": {
+        "width": 1.25,
+        "mono_hz": 120.0
+      }
+    }
+  }
+}

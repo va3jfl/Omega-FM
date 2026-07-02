@@ -1,0 +1,185 @@
+{
+  "format": "omegafm-preset",
+  "version": 1,
+  "name": "FACTORY DEFAULT",
+  "signature": "AGGRESSIVE",
+  "density": "LIGHT",
+  "created": "2026-07-02T09:19:57",
+  "params": {
+    "bypass_rotator": false,
+    "bypass_agc": false,
+    "bypass_eq": false,
+    "bypass_bass": false,
+    "bypass_leveler": false,
+    "bypass_comp": false,
+    "bypass_hf_lim": false,
+    "bypass_wb_lim": false,
+    "bypass_clipper": false,
+    "bypass_comp_clip": false,
+    "agc_target_db": -17.0,
+    "agc_range_db": 12.0,
+    "agc_attack_db_s": 2.5,
+    "agc_release_db_s": 1.2,
+    "agc_gate_db": -45.0,
+    "agc_integration_ms": 400.0,
+    "agc_window_db": 1.0,
+    "eq_freqs": [
+      100.0,
+      400.0,
+      2000.0,
+      8000.0
+    ],
+    "eq_gains": [
+      0.5,
+      -0.5,
+      1.0,
+      3.0
+    ],
+    "eq_qs": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "bass_shelf_db": 0.5,
+    "bass_harmonics": 0.45,
+    "lev_targets_db": [
+      -24.0,
+      -22.5,
+      -28.0,
+      -27.0
+    ],
+    "lev_range_db": 7.0,
+    "lev_rate_db_s": 1.5,
+    "lev_gate_db": -50.0,
+    "lev_integration_ms": 300.0,
+    "lev_window_db": 2.0,
+    "lev_couple_db": 2.0,
+    "comp_thresholds_db": [
+      -15.0,
+      -15.5,
+      -15.5,
+      -12.5
+    ],
+    "comp_ratios": [
+      3.0,
+      3.4,
+      3.4,
+      3.8
+    ],
+    "comp_attack_ms": [
+      12.0,
+      7.0,
+      5.0,
+      3.0
+    ],
+    "comp_release_ms": [
+      286.0,
+      208.0,
+      156.0,
+      117.0
+    ],
+    "comp_makeup_db": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "comp_knee_db": 6.0,
+    "comp_platform_ms": 700.0,
+    "band_mix_db": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_drive_db": -2.9,
+    "hf_lim_threshold_db": -1.4,
+    "hf_lim_release_ms": 80.0,
+    "hf_split_hz": 4500.0,
+    "wb_lim_ceiling_db": -0.5,
+    "wb_lim_release_db_s": 90.0,
+    "wb_platform_ms": 250.0,
+    "clip_drive_db": 5.0,
+    "clip_knee": 0.15,
+    "composite_clip_mode": "filtered",
+    "composite_drive_db": 0.4
+  },
+  "plugins": {
+    "azimuth_repair": {
+      "enabled": true,
+      "params": {
+        "correct": 10.0,
+        "maxlag_us": 400.0,
+        "polfix": 1.0
+      }
+    },
+    "de_clipper": {
+      "enabled": true,
+      "params": {
+        "declip": 5.0,
+        "lossy": 3.0,
+        "test": 0.0
+      }
+    },
+    "de_esser": {
+      "enabled": true,
+      "params": {
+        "freq": 6000.0,
+        "thresh_db": -3.0,
+        "range_db": 4.4,
+        "release_ms": 51.0
+      }
+    },
+    "dehum_gate": {
+      "enabled": true,
+      "params": {
+        "hum": 6.0,
+        "harm": 5.0,
+        "gate_db": -55.0,
+        "range_db": 12.0,
+        "test": 0.0
+      }
+    },
+    "natural_dynamics": {
+      "enabled": true,
+      "params": {
+        "amount": 3.0,
+        "sens": 4.0,
+        "speed_ms": 60.0
+      }
+    },
+    "power_bass": {
+      "enabled": true,
+      "params": {
+        "drive_db": 3.5,
+        "freq": 120.0,
+        "punch": 0.25,
+        "trim_db": 0.0
+      }
+    },
+    "sonic_maximizer": {
+      "enabled": true,
+      "params": {
+        "proc": 2.0,
+        "contour": 1.9,
+        "out_db": -0.5
+      }
+    },
+    "stereo_governor": {
+      "enabled": true,
+      "params": {
+        "ceiling_db": -3.0,
+        "release_ms": 250.0,
+        "range_db": 12.0
+      }
+    },
+    "stereo_widener": {
+      "enabled": true,
+      "params": {
+        "width": 1.25,
+        "mono_hz": 107.0
+      }
+    }
+  }
+}
