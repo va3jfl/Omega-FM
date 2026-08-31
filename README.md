@@ -1,4 +1,4 @@
-# Omega FM
+# Omega FM Version 1 Original
 
 A software clone of the **Inovonics OmegaFM** FM broadcast audio
 processor, written in Python. It is built like real broadcast gear —
